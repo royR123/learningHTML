@@ -3,21 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="10000">
     <link rel="stylesheet" href="index.css">
     <link rel="icon" type = "image/x-icon"  href = "https://images.pexels.com/photos/1107717/pexels-photo-1107717.jpeg?cs=srgb&dl=pexels-fotios-photos-1107717.jpg&fm=jpg">
     <title>Document</title>
     <style>
         body{
-            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgSVMLJAybwkPi2a8EjrNSjQySErCvnOH1Kg&s);
+            /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgSVMLJAybwkPi2a8EjrNSjQySErCvnOH1Kg&s); */
             background-repeat: no-repeat;
             background-size: 100% 100%;
             background-attachment: fixed;
-
         }
+        table , td , th{
+            /* border: 1px inset white; */
+        }
+        tr{
+            border-bottom: 1px solid white;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        th:nth-child(even) , td:nth-child(even){
+            background-color: rgba(160, 156, 151, 0.256);
+        }
+        tr:nth-child(even){
+            background-color: rgba(158, 193, 193, 0.647);
+        }
+
+        /* th,td{
+            border: 1px solid white;
+            
+        }
+        table{
+            border-collapse: collapse;
+        } */
     </style>
 </head>
 <body style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
-    <h1 title="name" id = "c1">
+    <!-- <h1 title="name" id = "c1">
         Ritik Roy
     </h1>
     <img src="https://img.freepik.com/free-photo/smiling-young-male-professional-standing-with-arms-crossed-while-making-eye-contact-against-isolated-background_662251-838.jpg?semt=ais_hybrid"
@@ -64,7 +87,74 @@
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus odit quas animi veritatis impedit repellat aperiam voluptas illo deleniti quam?
         </p>
         <a href="mailto:ritikroy1110@gmail.com">send me email</a>
-        <a href = "#c1">Top</a>
+        
+        <table>
+            <caption>Employee Data</caption>
+            <tr>
+                <th>Company</th>
+                <th colspan="2">Contact</th>
+                <!-- <th>Country</th> -->
+            <!-- </tr>
+            <tr>
+                <td>Microsoft</td>
+                <td >8910399581</td>
+                <td>India</td>
+            </tr>
+            <tr>
+                <td >Google</td>
+                <td >8180819101</td>
+                <td >India</td>
+            </tr>
+            <tr>
+                <td>Microsoft</td>
+                <td>9211834681</td>
+                <td>India</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td colspan="4" style="text-align: center;">Time Table</td>
+            </tr>
+            <tr>
+                <th colspan="1"></th>
+                <th>Mon</th>
+                <th>Tues</th>
+                <th>Wed</th>
+            </tr>
+            <tr>
+                <td>08:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>09:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>10:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/q6KUbCeKK3g?si=VNgUgLDt16BBozSM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe src="index1.html" name="iframe-a"></iframe>
+        <a href="https://www.google.com"  target="iframe-a">Google</a>
+        <form action="" method="get">
+            <label for="name">Name</label>
+            <input type="text" id="name">
+            <input type="radio" name="fav_lang" id="html" value="HTML">
+            <input type="radio" name="fav_lang" id="css" value="CSS">
+            <input type="radio" name="fav_lang" id="js" value="JavaScript">
+            <input type="submit" value="submit">
+        </form> --> 
+
+
+        <canvas data-engine="three.js r151" width="1440" height="4352" style="display: block; width: 360px; height: 1088px;"></canvas>
+        <a href = "#c1" style="color: white;" target="iframe-a">Top</a>
 </body>
 </html>
 

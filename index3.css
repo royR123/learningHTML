@@ -1,0 +1,88 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 100px; 
+} 
+
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+    margin: 2px;
+    border: 5px solid black;
+    font-size: 25px;
+    /* z-index: -10; */
+    position: relative;
+    top: 50vh;
+    left: 10px;
+}
+#box1{
+    position: sticky;
+    top: 29px;
+    left: 0;
+    height: 100px;
+    width: 100px;
+    font-size: .4rem;
+    background-color: blueviolet;
+    border: 5px solid black;
+}
+.subbox{
+    width: 50%;
+    height: 50%;
+    position: fixed;
+    top: 0;
+    left: 22px;
+    z-index: -1;
+    font-size: 1.2em;
+    background-color: aliceblue;
+    margin:auto;
+    background-color: aqua;
+}
+#box10{
+    width: 350px;
+    height: 800px;
+    background-color: bisque;
+}
+#box11{
+    width: 100px;
+    height: 450px;
+    font-size: .2rem;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+    /* z-index: 11; */
+    overflow: scroll;
+}
+.box20{
+    background-color: black;
+    font-size: 100%;
+    margin: 20px;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+#box21{
+    background-color: aqua;
+    position: fixed;
+    /* top: 100vh; */
+    animation-name: moveup;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-direction: alternate-reverse;
+}
+@keyframes moveup {
+    from{
+        top: 100vh;
+    }
+    to{
+        top: 50vh;
+    }
+}
+@media screen and (max-width : 400px) and (min-width : 300px) {
+    #box11{
+        background-color: aqua;
+    }
+}
